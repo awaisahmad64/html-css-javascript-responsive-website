@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.head1{
+	background-color: #1A5276 ;
+
+}
+.head1 a{
+	text-decoration: none;
+	color: white;
+}
+.head1 table{
+	margin-left: 200px;
+}
+.head2{
+	height: 70px;
+	background-color: white;
+	display: block;
+}
+.head2 ul{
+	margin-left: 500px;
+	margin-top: -50px;
+}
+.head2 li{
+	display: inline-block;
+	padding-left: 55px;
+}
+.head2 img{
+margin-bottom: -18px;
+}
+.head2 h1{
+	cursor: pointer;
+}
+.head2 li:hover{
+	cursor: pointer;
+	color: aqua;
+}
+.active{
+	color: aqua;
+}
+.head3{
+	height: 600px;
+	background-size: cover;
+	background-image: url('../image/back1.jpg');
+	background-repeat: no-repeat;
+}
+.front{
+	background-color:  #1A5276;
+	height: 600px;
+	opacity: 0.7;
+
+}
+.front table{
+	padding-top: 300px;
+}
+.front h2{
+	font-size: 30px;
+	color: white;
+}
+.front p{
+	color: white;
+	padding-top: 10px;
+}
+.font{
+	width: 30%;
+	text-align: center;
+}
+.arr img{
+	background-color: grey;
+}
+.arr img:hover{
+	background-color: aqua;
+	cursor: pointer;
+}
+.front button{
+	margin-top: 20px;
+	background-color: transparent;
+	height: 60px;
+	color: white;
+	font-size: 15px;
+	padding:10px;
+	border-radius: 5px;
+	margin-left: 40px;
+}
+.front button:hover{
+	background-color: aqua;
+	cursor: pointer;
+}
+.front .btn{
+	background-color: aqua;
+}
+.front .btn:hover{
+	cursor: pointer;
+	background-color: transparent;
+}
+.head4{	
+	height: 100px;
+	background-color:#1A5276; 
+}
+.head4 table{
+	width: 60%;
+	margin-left: 200px;
+	text-align: center;
+}
+.head4 td{
+	color: white;
+	padding-top: 30px;
+	width: 5%;
+}
+.head4 input{
+	height: 40px;
+	border: none;
+	width: 230px;
+	font-size: 15px;
+	padding-left: 8px;
+}
+.head4 input[type=submit]{
+	width: 70px;
+	background-color: aqua;
+	color: white;
+}
+.head5{
+	height: 600px;
+	margin-top: 100px;
+	text-align: center;
+}
+.head5 table{
+	margin-top: 60px;
+	border-collapse: collapse;
+	width: 100%;
+}
+.head5 img{
+	background-color: silver;
+	border: 4px solid silver;
+}
+.head5 img:hover{
+	border: 4px solid aqua;
+	cursor: pointer;
+}
+.head5 button{
+	color: black;
+	margin-top: -8px;
+	margin-left: 0px;
+	width: 208px;
+	height: 60px;
+	border: none;
+	border: 4px solid silver;
+	border-radius: 0px;
+	background-color: silver;
+}
+.head5 button:hover{
+	background-color:#1A5276;
+	color: white;
+	border: none; 
+}
+.back6{
+
+	background: url('../image/back.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.head6{
+	height: 400px;
+	background-color: #1A5276; 
+	opacity: 0.8;
+}
+.head6 text{
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 30px;
+}
+.head6 table{
+	margin-left: 250px;
+	padding-top: 100px;
+}
+.head6 td{
+	padding-left: 30px;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+.head6 img{
+		
+		border: 3px solid white;
+		border-radius: 50%;
+}
+.head6 img:hover{
+	cursor: pointer;
+	border-color: aqua;
+}
+.head6 td:hover{
+	color: aqua;
+	cursor: pointer;
+}
+.head7{
+	height: 400px;
+	text-align: center;
+	padding-top: 30px;
+	overflow: balance;
+
+}
+.head7 table{
+	margin-top: 60px;
+	height: 150px;
+}
+.head7 td{
+	box-shadow: 3px 0px 3px grey;
+}
+.head7 td:hover{
+ border-top: 5px solid aqua;
+}
+.head8{
+	background-color: #1A5276;
+	height: 400px;
+}
+.head8 table{
+	padding-top: 60px;
+	margin-left: 80px;
+	margin-right: 80px;
+	color: white;
+}
+.head8 th{
+	color: aqua;
+	font-size: 25px;
+	width: 20%;
+	text-align: left;
+}
+.head8 td{
+	width: 20%;
+	padding:5px;
+}
+.head8 td input{
+	padding:10px;
+}
+.head8 td button{
+	height: 40px;
+	padding: 10px;
+	border: 2px solid white;
+	background-color: transparent;
+}
+.head8 .btn1{
+	background-color: aqua;
+	border:none;
+}
+.head8 p{
+	display:block;
+}
