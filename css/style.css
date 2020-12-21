@@ -122,7 +122,7 @@
 	    	padding:10px 40px;
 	    	background: #27fb6b;
 	    	font-size: 18px;
-		    color:white;
+		    color:#ffffff;
 	    }
 	    /*styling for sticky header*/
 	    .sticky{
@@ -151,6 +151,7 @@
       }
 	.humburger{
 		display: block;
+	
 	}
 	.nav-brand{
 			font-size: 1.5em;
