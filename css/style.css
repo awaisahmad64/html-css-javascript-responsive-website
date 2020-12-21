@@ -5,13 +5,19 @@
 			box-sizing: border-box;
 		}
 /* for basic styling*/
+              :root{
+			--bg-color:#0a2e36;
+			--primary-color:#27fb6b;
+			--font-color:#bbbbbb;
+
+		}
 		body{
 		  font-family: sans-serif;
 		  color:white;
 		}
 		a{
 			cursor: pointer;
-			color:inherit;
+			color:var(--font-color);
 			text-decoration: none;
 		}
 		ul,li{
@@ -48,6 +54,7 @@
 			display: none;
 			cursor: pointer;
 			padding:5px;
+			color:white;
 		}
 		/* =======================close button===============================*/
 		.close{
@@ -122,6 +129,9 @@
 	    	color:black;
 		    z-index:1000;
 	    }
+.sticky .humburger{
+	color:black
+}
 	    
 /* ======================responsive header using media query==================================*/
 @media (max-width:900px ){
