@@ -10,7 +10,7 @@
 			--font-color:#bbbbbb;
 
 		}
-		a{
+		footer a{
 			text-decoration: none;
 			color:var(--font-color);
 		}
