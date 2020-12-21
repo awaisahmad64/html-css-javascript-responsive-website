@@ -45,7 +45,8 @@
 		.footer-col .col-heading::before{
 			width: 30px;
 			height: 2px;
-		    left:0;
+			z-index:1;
+		        left:0;
 			box-sizing: border-box;
 			bottom: -10px;
 			content: "";
