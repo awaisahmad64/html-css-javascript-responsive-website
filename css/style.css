@@ -135,6 +135,9 @@
 }
 /* ======================responsive header using media query==================================*/
 @media (max-width:792px ){
+	header{
+      	padding:0 15px;
+      }
 	.humburger{
 		display: block;
 	}
