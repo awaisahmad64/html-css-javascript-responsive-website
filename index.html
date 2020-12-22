@@ -11,10 +11,10 @@
 <body>
 	<header id="header">
 		<nav class="navbar">
-			<div class="nav-brand">
+			<div class="nav-brand" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-sine">
 				<span>a</span>wais
 			</div>
-			<ul class="nav-menu " id="nav-menu">
+			<ul class="nav-menu " id="nav-menu" data-aos="fade-left" data-aos-delay="300">
 				<span class="close" id="close">&times;</span>
 				<li class="nav-item"><a href="#" class="nav-link active">home</a></li>
 				<li class="nav-item"><a href="#" class="nav-link">about</a></li>
@@ -29,7 +29,7 @@
 		</nav>
 	</header>
 	<section class="banner">
-		<div class="hero-content">
+		<div class="hero-content" data-aos="fade-down" data-aos-delay="500">
 			<h1 class="hero-title">Hey! I'm Awais Ahmad</h1>
 			<p class="subtitle" style="text-transform:capitalize;">we design and develop awesome websites.</p>
 			<a href="https://www.upwork.com/freelancers/~014f2ce8b9589622d4?viewMode=1" class="call-to-action">Hire Me</a>
@@ -39,7 +39,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="footer-col">
+				<div class="footer-col" data-aos="fade-right">
 					<h4 class="col-heading">Awais</h4>
 					<ul>
 						<li><a href="#">about us</a></li>
@@ -48,7 +48,7 @@
 						<li><a href="#">terms & conditions</a></li>
 					</ul>
 				</div>
-				<div class="footer-col">
+				<div class="footer-col" data-aos="fade-up">
 					<h4 class="col-heading">get help</h4>
 					<ul>
 						<li><a href="#">FAQ</a></li>
@@ -57,7 +57,7 @@
 						<li><a href="#">coding</a></li>
 					</ul>
 				</div>
-				<div class="footer-col">
+				<div class="footer-col" data-aos="fade-up">
 					<h4 class="col-heading">youtube channel</h4>
 					<ul>
 						<li><a href="#">Web Design</a></li>
@@ -66,7 +66,7 @@
 						<li><a href="#">Mysql and php</a></li>
 					</ul>
 				</div>
-				<div class="footer-col">
+				<div class="footer-col" data-aos="fade-left">
 					<h4 class="col-heading">follow us</h4>
 					<div class="social-links">
 						<a href="https://web.facebook.com/awaisfazalkareem"><i class="fab fa-facebook-f"></i></a>
@@ -78,6 +78,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
 	<script src="js/main.js"></script>
 </body>
 </html>
