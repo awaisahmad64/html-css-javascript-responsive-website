@@ -7,6 +7,17 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<style>
+		#one{
+			fill:white;
+		}
+		.sticky .humburger #one{
+	          fill:black;
+      }
+      .rws{
+      	fill: #27fb6b;
+      }
+	</style>
 </head>
 <body>
 	<header id="header">
@@ -16,15 +27,15 @@
 			</div>
 			<ul class="nav-menu " id="nav-menu">
 				<span class="close" id="close">&times;</span>
-				<li class="nav-item"><a href="#" class="nav-link active">home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">about</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">service</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">blog</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">portfolio</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+				<li class="nav-item"><a href="#" class="nav-link nav-link1 active">home</a></li>
+				<li class="nav-item"><a href="#about-me" class="nav-link nav-link2">about</a></li>
+				<li class="nav-item"><a href="#services" class="nav-link nav-link2">service</a></li>
+				<li class="nav-item"><a href="#" class="nav-link nav-link4">blog</a></li>
+				<li class="nav-item"><a href="#" class="nav-link nav-link5">portfolio</a></li>
+				<li class="nav-item"><a href="#" class="nav-link nav-link6">contact</a></li>
 			</ul>
 			<div class="humburger" id="humburger" >
-				&#9776;
+	           <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g id="Layer_47" data-name="Layer 47"><path id="one" d="M12,20.84H32a1.5,1.5,0,0,0,0-3H12A1.5,1.5,0,0,0,12,20.84Z"/><path id="one" d="M53.5,32A1.5,1.5,0,0,0,52,30.5H12a1.5,1.5,0,0,0,0,3H52A1.5,1.5,0,0,0,53.5,32Z"/><path id="one" d="M52,43.16H32a1.5,1.5,0,0,0,0,3H52A1.5,1.5,0,0,0,52,43.16Z"/></g></svg>
 			</div>
 		</nav>
 	</header>
@@ -35,9 +46,73 @@
 			<a href="https://www.upwork.com/freelancers/~014f2ce8b9589622d4?viewMode=1" class="call-to-action">Hire Me</a>
 		</div>
 	</section>
+	<!-- banner section end -->
+			<div class="section-about-me" id="about-me">
+					<h2 class="about-me-title">About Me</h2>
+				<div class="container">
+					<div class="section-about-me-container">
+						<div class="img-col">
+							<img src="image/img8_5.png" alt="">
+						</div>
+						<div class="content-col">
+							<h2 class="content-col-title">I'm a Professional Web Developer.</h2>
+							<p class="content-col-para">
+								I'm Awais Ahmad and a Professional Web developer. I did a BS in Computer Science from Government College University Faisalabad. I have +2 experience in web development. I provide professional web development service for our client and our first priority is client satisfaction. If you have a project, feel free and contact me.
+							</p>
+		                    <button class="content-col-button">Text Me</button>   
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- service section -->
+			<div class="section-services" id="services">
+				<h2 class="about-me-title">Our Services</h2>
+				<div class="container">
+					<div class="section-services-container">
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 0 24 24" width="64px"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+							<h3 class="services-subtitle">Responsive Website</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="64px" height="64px"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+							<h3 class="services-subtitle">Web Development</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 0 24 24" width="64px"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+							<h3 class="services-subtitle">Wordpress plugin Development</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 24 24" width="64"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+							<h3 class="services-subtitle">Wordpress theme Development</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="64px" height="64px"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+							
+							<h3 class="services-subtitle">Word Customization</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						<div class="item">
+							<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 24 24" width="64"><path d="M0 0h24v24H0z" fill="none"/><path class="rws" d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+							<h3 class="services-subtitle">Digital Marketing</h3>
+							<p class="content-col-para">We design and develop awesome website. Our first priority to 100% satisfication of our clients and don't want to that our client throught any stone back.</p>
+							<button class="read-more">Read More</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
 	<!-- footer area here -->
 	<footer>
-		<div class="container">
+		<div class="footer-container">
 			<div class="row">
 				<div class="footer-col">
 					<h4 class="col-heading">Awais</h4>
