@@ -9,7 +9,11 @@
 			--bg-color:#0a2e36;
 			--primary-color:#27fb6b;
 			--font-color:#bbbbbb;
+			--section-light-gray-color:#f1fdf7;
 
+		}
+		html{
+			scroll-behavior: smooth;
 		}
 		body{
 		  font-family: sans-serif;
@@ -32,6 +36,7 @@
 			top: 0;
 			left: 0;
 			z-index:1000;
+			transition: all .5s;
 		}
 		header .navbar{
 			display:flex;
@@ -44,6 +49,7 @@
 			font-weight: 700px;
 			text-transform: uppercase;
 			cursor: pointer;
+			z-index: 999999;
 		}
 		.nav-brand span{
 			color:#27fb6b;
@@ -53,22 +59,28 @@
 			line-height: 80px;
 			display: none;
 			cursor: pointer;
-			padding:5px;
+			padding:5px 0 0 0;
 			color:white;
+			transition: .3s;
+			user-select: none;
 		}
 		/* =======================close button===============================*/
 		.close{
 			position: absolute;
-			top: 15px;
-			right: 30px;
+			top: 20px;
+            right: 22px;
 			font-size: 2em;
 			font-weight:bold;
 			cursor: pointer;
 			display: none;
+			transition: .3;
+			user-select: none;
 		}
-		.active{
+		a.active{
 			background: #27fb6b;
-			padding:5px 15px;
+			padding:10px 20px;
+			color:#202020;
+
 		}
 		.nav-menu{
 			display: flex;
@@ -119,10 +131,11 @@
 	    .call-to-action{
 	    	margin-top:30px;
 	    	display:inline-block;
-	    	padding:10px 40px;
+	    	padding:18px 40px;
 	    	background: #27fb6b;
-	    	font-size: 18px;
-		    color:#ffffff;
+	    	font-size: 24px;
+	    	font-weight: 500;
+		    color:#202020;
 	    }
 	    /*styling for sticky header*/
 	    .sticky{
@@ -134,11 +147,104 @@
 	color:black;
 }
 	    
+/* ======================About Me Section==================================*/
+.section-about-me{
+	background: #fff;
+	width: 100%;
+	padding:80px 0;
+	color:#303030;
+}
+.about-me-title{
+	text-align:center;
+	font-size:36px;
+	font-weight: 500px;
+	color:#303030;
+	margin-bottom: 80px;
+}
+.section-about-me-container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-column-gap: 30px;
+	align-items: center;
+}
+.img-col{
+	max-width: 792px;
+	overflow: hidden;
+}
+.img-col img{
+	object-fit: cover;
+	width:100%;
+	border-radius:5px;
+}
+.container{
+	max-width: 1170px;
+	margin:0 auto;
+}
+.content-col-title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color:#303030;
+
+}
+.content-col-para{
+	line-height: 1.6;
+	font-size:18px;
+	margin-bottom: 30px;
+}
+.content-col-button{
+	padding:18px 40px;
+    color:#202020;
+    background: #27fb6b;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ======================Service Section start==================================*/
+.section-services{
+	text-align:center;
+	padding:80px 0;
+	background:var(--section-light-gray-color);
+	color:#202020;
+	width: 100%;
+}
+.section-services-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+}
+.read-more{
+	padding:12px 24px;
+	outline:none;
+	border:none;
+	font-size:18px;
+	background: #27fb6b;
+}
+.services-subtitle{
+	margin-bottom: 15px;
+}
+.item{
+	background: white;
+	padding:30px;
+}
+.item:hover{
+	box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+/* ======================Service Section end==================================*/
+@media screen and (max-width: 1170px){
+	.container{
+		margin:0 15px 0 15px;
+	}
+}
+
 /* ======================responsive header using media query==================================*/
 @media (max-width:900px ){
       header{
       	padding:0 50px;
       }
+  }
       @media (max-width:400px ){
       header{
       	padding:0 30px;
@@ -159,21 +265,26 @@
      .nav-menu{
      	position: absolute;
      	top:0;
-        left: 0;
-     	display: block;
+        right: -125%;
+     	/*display: flex;*/
+     	justify-content: center;
+     	align-items:center;
      	color:#303030;
-     	background: white;
+     	background: #0a2e36;
      	height: 100vh;
-     	width: 80%;
-     	padding-top:100px;
-     	display: none;
+     	width: 100vw;
+     	/*adding-top:100px;*/
+     	display:flex;
+     	flex-direction: column;
+     	transition:all .5s;
      
 
      }
      .nav-item{
-     	display: block;
+     	display:flex;
+     	justify-content: center;
+     	align-items: center;
      	margin:0;
-     	text-align: center;
      }
      .banner{
      	padding:110px 30px;
@@ -182,9 +293,65 @@
       	font-size: 3em;
       }
       .active-nav-menu{
-      	display: block;
+      	/*display: flex;
+      	justify-content: center;
+      	align-items:center;
+      	flex-direction: column;*/
+      	right:0;
       }
+      a.active{
+      	/*background: white;*/
+      	background: transparent;
+      	color:#bbbbbb !important;
+      }
+      a.nav-link{
+      	line-height: 1.8;
+      	font-size: 36px;
+      	font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+      }
+      .nav-link1:before,.nav-link2:before,
+      .nav-link3:before,.nav-link4:before,.nav-link5:before,
+      .nav-link6:before{
+      	position: absolute;
+      	top:-20px;
+      	right: -40px;
+      	color:#27fb6b;
+      }
+      .nav-link1:before{
+      	content:"01";
+      }
+      .nav-link2:before{
+      	content:"02";
+      }
+      .nav-link3:before{
+      	content:"03";
+      }
+      .nav-link4:before{
+      	content:"04";
+      }
+      .nav-link5:before{
+      	content:"05";
+      }
+      .nav-link6:before{
+      	content:"06";
+      }
+      
       .close{
       	display: block;
+      	color:white;
       }
+      .section-about-me-container{
+
+	grid-template-columns: 100%;
+	grid-row-gap: 30px;
+}
+.section-services-container{
+	grid-template-columns: 100%;
+	grid-row-gap: 30px;
+}
+.container{
+	margin:0 15px;
+}
 }
