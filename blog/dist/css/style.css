@@ -1,0 +1,331 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #666;
+}
+a,
+a:active,
+a:checked {
+  text-decoration: none;
+  color: #666;
+}
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+a.active {
+  font-weight: 500;
+  color: #333;
+}
+header {
+  width: 100%;
+  box-shadow: 0 0 4px #e3e6e8;
+}
+.header__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  margin: 0 0.5rem;
+}
+ul li a {
+  font-weight: 300;
+}
+.search__box {
+  position: relative;
+}
+.search__box input[type='search'] {
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 4px #e3e6e8;
+  padding: 0.25rem 0.5rem;
+  font-family: inherit;
+}
+.search__box i.fas {
+  position: absolute;
+  color: #666;
+  top: 7px;
+  right: 10px;
+}
+@media only screen and (max-width: 1080px) {
+  .header__container {
+    padding: 1rem;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__container {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  ul {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  li {
+    margin-top: 1rem !important;
+  }
+}
+.heading__section {
+  padding: 2rem 0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.heading__section h3 {
+  font-weight: bold;
+}
+@media only screen and (max-width: 1080px) {
+  .heading__section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .heading__section {
+    padding: 1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .heading__section h3 {
+    margin: 0 1rem;
+  }
+}
+.main__container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.main__title {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.main__title::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 74px;
+  border-bottom: 2px solid #333;
+}
+.main__all_stories__title {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.main__all_stories__title::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 94px;
+  border-bottom: 2px solid #333;
+}
+.grid__cards {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1rem;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.grid__card {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  /* grid-column-gap: 1rem; */
+  box-shadow: 0 0 4px #e3e6e8;
+}
+.grid__card__content {
+  padding: 1rem;
+}
+.grid__card__content h3 {
+  padding-bottom: 0.5rem;
+}
+.pp {
+  padding-bottom: 0.5rem;
+}
+.grid__card__img {
+  max-width: 300px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* .grid__card__content__user__img {
+  max-width: 80px;
+  border-radius: 80px;
+  height: 80px;
+} */
+.grid__card__content__user__profile {
+  flex: 0 1 270px;
+}
+.grid__card__content__user__img {
+  margin-right: 0.5rem;
+}
+.grid__card__content__user__img img {
+  max-width: 40px;
+  border-radius: 40px;
+  display: block;
+}
+.grid__card__content__user {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.grid__card__horizental {
+  display: grid;
+  grid-template-columns: 100%;
+  /* grid-column-gap: 1rem; */
+  box-shadow: 0 0 4px #e3e6e8;
+}
+.grid__card_horizental__img {
+  max-width: 550px;
+  display: block;
+}
+.grid__card_horizental__img img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.grid__card__horizental__content__user__profile {
+  flex: 0 1 247px;
+}
+.grid__card__horizental__content__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* .f15 {
+  flex: 14%;
+}
+.f10 {
+  flex: 10%;
+} */
+.grid___horizental__cards {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.font14 {
+  font-size: 14px;
+}
+.font12 {
+  font-size: 12px;
+}
+.fw400 {
+  font-weight: 500;
+}
+@media only screen and (max-width: 1080px) {
+  .main__all_stories__title {
+    padding-left: 1rem;
+  }
+  .main__all_stories__title::after {
+    left: 1rem;
+  }
+  .grid___horizental__cards {
+    padding: 2rem;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .grid__card__horizental__content__user__profile {
+    flex: 0 1 385px;
+  }
+  .main__container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .main__title {
+    padding: 1rem;
+  }
+  .main__title::after {
+    padding-left: 1rem;
+    position: absolute;
+    bottom: -1px;
+    left: 1rem;
+    content: '';
+    width: 74px;
+    border-bottom: 2px solid #333;
+  }
+  .grid__cards {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 1rem;
+  }
+  /* .grid__card {
+    display: flex;
+    box-shadow: 0 0 4px #e3e6e8;
+  } */
+  .grid__card__content__user__profile {
+    /* flex: 1 1 270px; */
+    flex-grow: 1;
+  }
+}
+@media only screen and (max-width: 971px) {
+  .grid___horizental__cards {
+    padding: 2rem 1rem;
+    grid-template-columns: 100%;
+    grid-row-gap: 1rem;
+  }
+  .grid__card_horizental__img {
+    max-width: 100%;
+    display: block;
+  }
+  .grid__card__horizental__content__user__profile {
+    flex: 1 1 385px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__card__img {
+    max-width: 100%;
+    min-height: 300px;
+  }
+  .grid__card__horizental__content__user__profile {
+    flex: 1;
+  }
+}
